@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="UI.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+
+    <!--  Form Input  -->
+    <div class="form-group">
+      <input type="text" id="todo-input" placeholder="Enter your task...">
+      <input type="date" id="todo-date">
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- Filter and Delete -->
+    <div class="controls">
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button id="clear-btn">Delete All</button>
+      </div>
+
+    <!-- To-Do Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4" class="empty">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
+
